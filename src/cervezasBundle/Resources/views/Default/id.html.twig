@@ -1,0 +1,8 @@
+<ul>
+      {% for cerveza in cervezas %}
+        <h2>{{ cerveza.nombre }}</h2>
+        <p>{{cerveza.poblacion}}, {{cerveza.pais}}</p>
+        <p>{{cerveza.tipo}}, {{cerveza.tamano}}</p>
+        <p>{{cerveza.cantidad}}, {{cerveza.importacion}}</p>
+      {% endfor %}
+</ul>

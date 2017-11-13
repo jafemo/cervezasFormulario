@@ -1,0 +1,7 @@
+cervezas:
+    resource: "@cervezasBundle/Resources/config/routing.yml"
+    prefix:   /cervezas
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

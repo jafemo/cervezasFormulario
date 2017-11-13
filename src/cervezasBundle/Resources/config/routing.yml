@@ -1,0 +1,19 @@
+cervezas_homepage:
+    path:     /
+    defaults: { _controller: cervezasBundle:Default:index}
+
+cervezas_id:
+    path:     /{id}
+    defaults: { _controller: cervezasBundle:Default:id}
+
+cervezas_crear:
+    path:     /crearCerveza/{nombre}/{pais}/{poblacion}/{tipo}
+    defaults: { _controller: cervezasBundle:Cerveza:crearCerveza}
+
+cervezas_formulario:
+    path:     /formulario
+    defaults: { _controller: cervezasBundle:Cervezas:nuevoFormulario}
+
+cervezas_homepage:
+    path:     /
+    defaults: { _controller: cervezasBundle:Default:index}
