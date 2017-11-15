@@ -61,7 +61,7 @@ class Cervezas
      *
      * @ORM\Column(name="tamaño", type="integer")
      */
-    private $tamaño;
+    private $tamano;
 
     /**
      * @var \DateTime
@@ -216,27 +216,27 @@ class Cervezas
     }
 
     /**
-     * Set tamaño
+     * Set tamano
      *
-     * @param integer $tamaño
+     * @param integer $tamano
      *
      * @return Cervezas
      */
-    public function setTamaño($tamaño)
+    public function setTamano($tamano)
     {
-        $this->tamaño = $tamaño;
+        $this->tamano = $tamano;
 
         return $this;
     }
 
     /**
-     * Get tamaño
+     * Get tamano
      *
      * @return int
      */
-    public function getTamaño()
+    public function getTamano()
     {
-        return $this->tamaño;
+        return $this->tamano;
     }
 
     /**

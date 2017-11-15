@@ -5,6 +5,7 @@ namespace cervezasBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
 class CervezasType extends AbstractType
 {
@@ -19,10 +20,11 @@ class CervezasType extends AbstractType
         ->add('poblacion')
         ->add('tipo')
         ->add('importacion')
-        ->add('tamaño')
+        ->add('tamano')
         ->add('fechaAlmacen')
         ->add('cantidad')
-        ->add('foto');
+        ->add('foto')
+        ->add('insertar', SubmitType::class);
     }
 
     /**
